@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body {
+    background: url('../img/cta-bg.jpg') fixed center center;
+    background-size: cover;
+}
+
+.navbar{
+    padding-right: 0.5rem;
+    background-color: rgba(2, 14, 22, 0.3);
+}
+a.navbar-brand {
+    color: #fff;
+}
+.page-section {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    position: relative;
+    background-color: rgba(2, 14, 22, 0.3);
+}
+
+.content {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.content .item {
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 50%;
+    margin-top: 10px;
+    padding: 5px;
+    display: grid;
+}
+
+.content .item .item-box {
+    height: 250px;
+    background: #fff;
+    color: var(--bs-dark);
+    padding: 10px;
+    align-content: center;
+    display: inherit;
+}
+
+.content .item .item-box:hover {
+    background-color: var(--blitar-green);
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .page-section {
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content .item {
+        max-width: 25%;
+    }
+
+    .footer .right {
+        text-align: left;
+    }
+
+    .footer .mid {
+        margin: 0px;
+    }
+}
+
+.footer {
+    color: var(--bs-white);
+    background-color: var(--blitar-green);
+    padding: 15px 15px;
+    
+}
+
+.footer .row {
+    margin: 10px 0px;
+}
+
+.footer img.logo-foot {
+    max-width: 10%;
+    display: flex;
+    align-self: center;
+}
+
+.footer .left, .footer .right {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .right {
+    background: url('../img/map-image.png') no-repeat center center;
+    background-size: 200px;
+    font-size: .6rem;
+}
+
+.footer .mid {
+    margin: inherit;
+}

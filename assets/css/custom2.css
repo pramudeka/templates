@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+body {
+    background: #fff;
+    background-size: cover;
+}
+
+.navbar{
+    padding-right: 0.5rem;
+}
+.navbar a{
+    color: #fff;
+}
+
+#mainNav {
+    padding: 10px 20px;
+    background: var(--blitar-green);
+}
+#mainNav.scrolled {
+    background: var(--blitar-green);
+    box-shadow: 0px 5px 10px rgba(76, 166, 102, 0.45);
+    transition: all 0.5s;
+}
+#mainNav .navbar-nav .nav-item saran{
+    color: var(--bs-orange);
+    padding-right: 10px;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    font-size: .8rem;
+    color: #fff;
+    font-weight: bold;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active{
+   border-bottom: var(--bs-primary) solid;
+}
+#mainNav .navbar-brand img{
+    height: 3rem;
+}
+
+.page-section {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px;
+    margin: 20px 0px;
+}
+
+.content {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.content .item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    margin-top: 10px;
+    padding: 5px;
+    display: grid;
+}
+
+.content .item .item-box {
+    height: 100px;
+    background: #fff;
+    color: var(--bs-dark);
+    padding: 10px;
+    align-content: center;
+    display: inherit;
+}
+
+.content .item .item-box:hover {
+    background-color: var(--blitar-green);
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.mySlides img {vertical-align: middle;}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+a.prev, a.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+}
+a.prev {
+    left: 0;
+    border-radius:0  3px 3px 0;
+}
+a.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+a.prev:hover, a.next:hover {
+    background-color: rgba(0,0,0,0.5);
+    transition: all .2s ease;
+}
+.mySlides .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.dot-cont {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+    transition: all .2s ease;
+}
+
+/* Fading animation */
+.fading {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media (max-width: 768px) {
+    .page-section {
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content .item {
+        max-width: 100px;
+    }
+
+    .footer .right {
+        text-align: left;
+    }
+
+    .footer .mid {
+        margin: 0px;
+    }
+}
+
+.footer {
+    color: var(--bs-white);
+    background-color: var(--blitar-green);
+    padding: 15px 15px;
+    
+}
+
+.footer .row {
+    margin: 10px 0px;
+}
+
+.footer img.logo-foot {
+    max-width: 10%;
+    display: flex;
+    align-self: center;
+}
+
+.footer .left, .footer .right {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .right {
+    background: url('../img/map-image.png') no-repeat center center;
+    background-size: 200px;
+    font-size: .6rem;
+}
+
+.footer .mid {
+    margin: inherit;
+}
