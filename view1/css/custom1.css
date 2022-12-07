@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('../../assets/css/style.css');
 body {
     background: url('../img/cta-bg.jpg') fixed center center;
     background-size: cover;

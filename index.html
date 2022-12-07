@@ -5,11 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template List</title>
+
+    <style>
+        body{
+            background-color: #222;
+            color: #eee;
+            padding: 20px;
+        }
+        .content{
+            display: flex;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+        .content .item{
+            width: 200px;
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+        .content .item a{
+            display: block;
+            text-decoration: none;
+            color: #eee;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            padding: 10px 5px;
+        }
+        .content .item:hover{
+            background-color: darkcyan;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li><a href="./view1">Template 1</a></li>
-        <li><a href="./view2">Template 2</a></li>
-    </ul>
+    <div class="content">
+        <div class="item">
+            <a href="./view1/">Single Page</a>
+        </div>
+        <div class="item">
+            <a href="./view2/">Slider</a>
+        </div>
+    </div>
 </body>
 </html>
